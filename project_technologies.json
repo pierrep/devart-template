@@ -1,16 +1,18 @@
 {
     "technologies": {
         "apis": [
-            "insert apis"
+            "youtube"
         ],
         "platforms": [
-            "insert platforms"
-        ],
+            "raspberry pi"
+        ]
         "toolkits": [
-            "insert toolkits"
+            "openframeworks"
         ]
     },
     "themes": [
-        "insert themes"
+        "randomness",
+        "Internet Zeitgeist"
+        "global culture"
     ]
 }

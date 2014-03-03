@@ -1,33 +1,24 @@
 # Project Title
-Insert the name of your project
+TeleRoulette
 
 ## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+- Pierre, Proske, pierrep
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+The Tele-roulette is a reworked retro transistor TV that broadcasts a constant stream of random videos plucked off the Internet, principally from Youtube.com and Vimeo.com
 
-## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
+Search engines are determining our sources of information, guiding us towards what they believe we want through increasingly complex heuristics. As a result we are fed only a small slice of the possibilities the Internet has to offer. 
 
-[Example Link](http://www.google.com "Example Link")
+The motivation for Tele-Roulette is to monitor the pulse of the web and capture the zeitgeist of the Internet through a stream of random videos.
 
-## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
-```
-function test() {
-  console.log("Printing a test");
-}
-```
-## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
+The result – different every time, but most likely intriguing, then dull, then disturbing, then really really funny.
 
-[Example Link](http://www.google.com "Example Link")
+The diversity and volume of visual information gathered is filtered through a familiar "old" technology, the TV set, which is fast becoming obsolete as a Radio Frequency (RF) content provider. Employing a television and not simply a web browser helps to ground and contextualise the changes in media consumption we have been subject to since the advent of Internet streaming.
 
-## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
+Turn the TV on, switch to a favourite channel, and immediately be transfixed by the endless slide-show of random, weird or banal video clips, seamlessly pre-loaded to ensure smooth transitions.
 
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
+We are deluged with options and configuration possibilities these days. Tele-roulette is a solution to this. Just sink onto the couch and switch on the box.
 
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+![Summary Image](project_images/Tele-roulette-1000x1000.jpg?raw=true "TeleRoulette")
+
+
