@@ -5,14 +5,14 @@
         ],
         "platforms": [
             "raspberry pi"
-        ]
+        ],
         "toolkits": [
             "openframeworks"
         ]
     },
     "themes": [
         "randomness",
-        "Internet Zeitgeist"
+        "Internet Zeitgeist",
         "global culture"
     ]
 }
