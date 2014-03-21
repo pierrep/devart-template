@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "ofxJSONElement.h"
+#include "ofxThreadedVideo.h"
 
 
 class ofApp : public ofBaseApp {
@@ -17,9 +18,10 @@ public:
     const string getNewVideo();
 
     ofxJSONElement  response;
-    ofVideoPlayer 	ytVideo;
+    ofVideoPlayer 	ytVideo[2];
+    int currentIndex;
     float ratio;
 
-    bool bLoaded;
+    bool bLoaded[2];
     bool bPaused;
 };

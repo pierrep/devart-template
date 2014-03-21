@@ -6,29 +6,44 @@ void ofApp::setup()
 	ofSetVerticalSync(true);
 	ofBackground(0);
     ofSeedRandom(ofGetSystemTimeMicros());
+    ofSetLogLevel(OF_LOG_VERBOSE);
 
     ratio = 0;
+    currentIndex = 0;
 
-    ytVideo.setLoopState(OF_LOOP_NONE);
-	ytVideo.loadMovie(getNewVideo());
-	ytVideo.play();
+    bLoaded[0] = false;
+    bLoaded[1] = false;
+
+    ytVideo[0].setLoopState(OF_LOOP_NONE);
+	ytVideo[0].loadMovie(getNewVideo());
+    ytVideo[1].setLoopState(OF_LOOP_NONE);
+	ytVideo[1].loadMovie(getNewVideo());
+
+	ytVideo[currentIndex].play();
 }
 
 //------------------------------------------------------------------------------
 void ofApp::update()
 {
 
-    if((ytVideo.isLoaded()) && (!bLoaded)) {
-        bLoaded = true;
-        cout << "loaded..." << endl;
+    if((ytVideo[0].isLoaded()) && (!bLoaded[0])) {
+        bLoaded[0] = true;
+        ytVideo[0].update();
+        cout << "loaded..." << 0 << endl;
     }
 
-    if(bLoaded) {
-        ytVideo.update();
-        if((ytVideo.getWidth() > 0) && (ratio <= 0)) {
-            ratio = (ytVideo.getHeight() / ytVideo.getWidth());
+    if((ytVideo[1].isLoaded()) && (!bLoaded[1])) {
+        bLoaded[1] = true;
+        ytVideo[1].update();
+        cout << "loaded..." << 1 << endl;
+    }
+
+    if(bLoaded[currentIndex]) {
+        ytVideo[currentIndex].update();
+        if((ytVideo[currentIndex].getWidth() > 0) && (ratio <= 0)) {
+            ratio = (ytVideo[currentIndex].getHeight() / ytVideo[currentIndex].getWidth());
             cout << "ratio =" << ratio << endl;
-            cout << "video width = " << ytVideo.getWidth() << "  video height=" << ytVideo.getHeight() << endl;
+            cout << "video width = " << ytVideo[currentIndex].getWidth() << "  video height=" << ytVideo[currentIndex].getHeight() << endl;
         }
         //else ratio =0;
         //cout << "ratio=" << ratio << endl;
@@ -40,11 +55,13 @@ void ofApp::draw()
 {
     if(ratio != 0) {
         if(ofGetWidth()*ratio < ofGetHeight()) {
-            ytVideo.draw(0,(ofGetHeight() - ofGetWidth()*ratio) /2,ofGetWidth(),ofGetWidth()*ratio);
+            ytVideo[currentIndex].draw(0,(ofGetHeight() - ofGetWidth()*ratio) /2,ofGetWidth(),ofGetWidth()*ratio);
         }
         else {
-            ytVideo.draw(0,0,ofGetWidth(),ofGetWidth()*ratio);
+            ytVideo[currentIndex].draw(0,0,ofGetWidth(),ofGetWidth()*ratio);
         }
+    } else {
+        cout << "RATIO is zero!" << endl;
     }
 }
 
@@ -54,6 +71,7 @@ const string ofApp::getNewVideo()
     //string new_url = "https://www.youtube.com/watch?v=3iTV-rC8x-E";
     //string new_url = "https://www.youtube.com/watch?v=hHVzTZp7GZ8";
     //string new_url = "https://www.youtube.com/watch?v=qoZp-JOXi74";
+    //string new_url = "https://www.youtube.com/watch?v=si4t-19A0HM&feature=youtube_gdata";
 
     string new_url = getRandomURL();
     string video_url = "youtube-dl -g \"" + new_url + "\"";
@@ -70,7 +88,7 @@ const string ofApp::getNewVideo()
 	}
 	pclose(in);
 
-    bLoaded = false;
+    bLoaded[currentIndex] = false;
     video_url = buff;
     video_url.erase( std::remove_if(video_url.begin(), video_url.end(), ::isspace ), video_url.end() );
     //video_url = "\"" + video_url + "\"";
@@ -104,8 +122,8 @@ const string ofApp::getRandomURL()
     Json::Value entryNode = response["feed"]["entry"][i];
 
     Json::StyledWriter writer;
-    cout << "JSON output:" << endl;
-    cout << writer.write(entryNode) << endl;
+   //cout << "JSON output:" << endl;
+    //cout << writer.write(entryNode) << endl;
 
     //float width, height;
     //width = entryNode["media$group"]["media$thumbnail"][0]["width"].asInt();
@@ -145,17 +163,22 @@ void ofApp::keyPressed (int key)
     switch(key){
         case ' ':
             ratio = 0;
-            bLoaded = false;
-            ytVideo.closeMovie();
-            ytVideo.loadMovie(getNewVideo());
-            ytVideo.play();
+            bLoaded[currentIndex] = false;
+            ytVideo[currentIndex].closeMovie();
+            ytVideo[currentIndex].loadMovie(getNewVideo());
+            ytVideo[currentIndex].setPaused(bPaused);
+
+            if(currentIndex == 0) currentIndex = 1;
+            else currentIndex = 0;
+
+            ytVideo[currentIndex].play();
         break;
         case't':
-            cout << "Total Frames=" << ytVideo.getTotalNumFrames() << endl;
+            cout << "Total Frames=" << ytVideo[currentIndex].getTotalNumFrames() << endl;
         break;
         case'p':
             bPaused = !bPaused;
-            ytVideo.setPaused(bPaused);
+            ytVideo[currentIndex].setPaused(bPaused);
         break;
     }
 }
