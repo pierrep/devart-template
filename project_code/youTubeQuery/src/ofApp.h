@@ -3,25 +3,32 @@
 
 #include "ofMain.h"
 #include "ofxJSONElement.h"
-#include "ofxThreadedVideo.h"
-
+#include "ofxThreadedYouTubeVideo.h"
 
 class ofApp : public ofBaseApp {
 public:
     void setup();
     void draw();
     void update();
+    void exit();
     void keyPressed (int key);
 
-    const string genRandomString(const int len);
-    const string getRandomURL();
-    const string getNewVideo();
+    void getNewVideo(int id);
+    void getNextVideo();
 
-    ofxJSONElement  response;
-    ofVideoPlayer 	ytVideo[2];
+
+    void receivedYouTubeURLEvent(ofxYouTubeURLEvent & event);
+
+
+    ofxThreadedYouTubeVideo loader;
+
+    ofVideoPlayer 	ytVideo[8];
+    float ratio[8];
+    bool bLoaded[8];
+
     int currentIndex;
-    float ratio;
 
-    bool bLoaded[2];
     bool bPaused;
+    bool bShowInfo;
+    bool bVideoPlaying;
 };
