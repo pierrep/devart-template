@@ -20,7 +20,7 @@ Turn the TV on, switch to a favourite channel, and immediately be transfixed by 
 We are deluged with options and configuration possibilities these days. Tele-roulette is a solution to this. Just sink onto the couch and switch on the box.
 
 ## Links to External Libraries
-Some libraries and github repositories used to build this project
+Some libraries and github repositories used to build this project:
 
 [youtube-dl project](rg3.github.io/youtube-dl "youtube-dl")
 [openFramework ofxJSON Addon](https://github.com/bakercp/ofxJSON "ofxJSON")
