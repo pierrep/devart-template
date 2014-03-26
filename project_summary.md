@@ -23,15 +23,15 @@ The installation version of this project would consist of two elements:
 Firstly a standalone reworked retro transistor TV would be placed on a plinth, with only a power cable leading from it. This would be playing endless random YouTube videos. Inside the TV would be a Raspberry Pi with a wireless USB dongle attached as well as a composite video to RF converter, enabling the device to play video content. Optionally the TV dial might be able to switch channels or change videos. From the outside, it would appear to be a normal TV with no internet connectivity visible.
 
 **The TeleRoulette**
-A large wall of old Cathode Ray TVs looms above gallery viewers. In front of this edifice is a large spinnnable wheel labelled with 20-30 different words. Once the wheel has been spun, as it slows down it will eventually settle on a word, which is then automatically triggers a YouTube search using that word as a query term. Some of the words are labelled "random", and if these words are selected the search result returns a random video. Once a video has been selected, either randomly or through a search term, the TV wall lights us as each screen plays that same video.
+A large wall of old Cathode Ray TVs looms above gallery viewers. In front of this edifice is a large spinnnable wheel labelled with 20-30 different words. Once the wheel has been spun, as it slows down it will eventually settle on a word which then automatically triggers a YouTube search using that word as a query term. Some of the words are labelled "random", and if these words are selected the search result returns a random video. Once a video has been selected, either randomly or through a search term, the TV wall lights us as each screen plays that same video.
  
 
 ## Links to External Libraries
 Some libraries and github repositories used to build this project:
 
 [youtube-dl project](rg3.github.io/youtube-dl "youtube-dl")
-[openFrameworks ofxJSON Addon](https://github.com/bakercp/ofxJSON "ofxJSON")
-[openFrameworks ofxOMPlayer Raspberry Pi Addon](https://github.com/jvcleave/ofxOMXPlayer)
+openFrameworks [ofxJSON Addon](https://github.com/bakercp/ofxJSON "ofxJSON")
+openFrameworks Raspberry Pi [ofxOMPlayer Addon](https://github.com/jvcleave/ofxOMXPlayer "ofxOMXPlayer")
 
 ![Summary Image](project_images/Tele-roulette-1000x1000.jpg?raw=true "TeleRoulette")
 
