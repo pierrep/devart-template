@@ -1,4 +1,4 @@
-As a kid I used to get this sensation on sunny days that somewhere unbeknownst to me someone was having the time of their life and I was missing out. The motivation for this project is the sensation that somewhere in the world something weird or wonderful or mundane is happening at any instant.This project is an attempt to capture those fleeting moments, from the new archive of human performance, YouTube.
+The motivation for this project is the sensation that somewhere in the world something weird or wonderful or mundane is happening at any instant. This project is an attempt to capture those fleeting moments, from the new archive of human performance, YouTube.
 
 I've been holding on to a few old analogue TV's for a while in the hope of bringing them to life, and finally I've found a reason. Here's a picture of one of them dismantled in my studio: ![old TV](../project_images/brokenTele-1000x500.jpg).
 
