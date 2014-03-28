@@ -10,13 +10,14 @@ TeleRoulette is an installation exploring the cultural impact of the vast archiv
 
 The motivation for TeleRoulette is to monitor the pulse of the web and capture the zeitgeist of the Internet through a stream of random videos. The result – different every time, but most likely intriguing, then dull, then disturbing, then really really funny.
 
-The diversity and volume of visual information gathered is filtered through a familiar "old" technology, the TV set, which is fast becoming obsolete as a Radio Frequency (RF) content provider. Employing a television and not simply a web browser is a form of media archaeology and helps to ground and contextualise the changes in media consumption we have been subject to since the advent of Internet streaming.
+The diversity and volume of visual information gathered is filtered through a familiar "old" technology, the TV set, which is fast becoming obsolete as a Radio Frequency (RF) content provider. Employing a television and not simply a web browser is a form of media archaeology and helps to ground and contextualise the changes in media consumption we have been subject to since the advent of Internet streaming. 
 
 Turn the TV on and immediately be transfixed by the endless slide-show of random, weird or banal video clips, seamlessly pre-loaded to ensure smooth transitions.
 
-We are deluged with options and configuration possibilities these days. Tele-roulette is a solution to this. Just sink onto the couch and switch on the box.
 
 **Installation setup**
+Note: This installation will seek out the most elegant retro televisions possible to display the video content on!
+
 The installation version of this project would consist of two elements:
 
 **Solid State Streaming**
@@ -27,7 +28,7 @@ A large wall of old Cathode Ray TVs looms above gallery viewers. In front of thi
 
 **Project Quote** 
 ```
-"I've been watching a LOT of YouTube content. It's pretty interesting and fascinating. Some clips are obviously tiresome and quickly get dismissed, but there's a whole load of unexpected content up there, or at least content so bizarre yet so mundane that you can't help but be transfixed. Like the kid who narrates in a breathless voice and with a very very shaky camera how he feeds his guinea pigs each morning. Or the monologue by a slightly depressed looking Russian girl whose story you can only grasp by assigning a narrative to her yourself. Or the Brazilian youths performing crazy, camp, screeching dances in a kind of madcap drag. Then there are the endless minecraft playthroughs, usually voiced-over in such dead-pan voices and referencing so many odd game terms that you might think yourself on another planet."
+"I've been watching a LOT of YouTube content. It's pretty interesting and fascinating. Some clips are obviously tiresome and quickly get dismissed, but there's a whole load of unexpected content up there, or at least content so bizarre yet so mundane that you can't help but be transfixed. Like the kid who narrates in a breathless voice and with a very very shaky camera how he feeds his guinea pigs each morning. Or the monologue by a slightly depressed looking Russian girl whose story you can only make sense of by assigning a narrative to her yourself. Or the Brazilian youths performing crazy, camp, screeching dances in a kind of madcap drag. Then there are the endless minecraft playthroughs, usually voiced-over in such strange dead-pan voices and referencing such odd vocabulary that you might think yourself on another planet."
 ```
 
 ## Links to External Libraries
