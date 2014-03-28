@@ -12,4 +12,4 @@ To clarify the processes involved in both these installations, I've made up some
 
 ![Wheel chart](../project_images/technicalFlowchart-teleroulette.jpg "TeleRoulette flow chart")
 
-![solid state chart](../project_images/technicalFlowchart-solidstatestreaming "Solid State Streaming flow chart")
+![solidstate chart](../project_images/technicalFlowchart-solidstatestreaming.jpg "Solid State Streaming flow chart")
