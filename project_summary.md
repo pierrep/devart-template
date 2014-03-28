@@ -24,7 +24,11 @@ Firstly a standalone reworked retro transistor TV would be placed on a plinth, w
 
 **The TeleRoulette**
 A large wall of old Cathode Ray TVs looms above gallery viewers. In front of this edifice is a large spinnnable wheel labelled with 20-30 different words. Once the wheel has been spun, as it slows down it will eventually settle on a word which then automatically triggers a YouTube search using that word as a query term. Some of the words are labelled "random", and if these words are selected the search result returns a random video. Once a video has been selected, either randomly or through a search term, the TV wall lights us as each screen plays that same video.
- 
+
+**Project Quote** 
+```
+"I've been watching a LOT of YouTube content. It's pretty interesting and fascinating. Some clips are obviously tiresome and quickly get dismissed, but there's a whole load of unexpected content up there, or at least content so bizarre yet so mundane that you can't help but be transfixed. Like the kid who narrates in a breathless voice and with a very very shaky camera how he feeds his guinea pigs each morning. Or the monologue by a slightly depressed looking Russian girl whose story you can only grasp by assigning a narrative to her yourself. Or the Brazilian youths performing crazy, camp, screeching dances in a kind of madcap drag. Then there are the endless minecraft playthroughs, usually voiced-over in such dead-pan voices and referencing so many odd game terms that you might think yourself on another planet."
+```
 
 ## Links to External Libraries
 Some libraries and github repositories used to build this project:
