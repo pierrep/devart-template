@@ -3,3 +3,5 @@ One of the challenges for this project will be to scour the earth for the best a
 A brief search on-line turned up this photo. Perhaps I'll need to make a trip to Japan, I'm willing to bet they have some very lovely old TVs:
 
 ![Japanese Retro TVs](http://furinkan.meidokon.net/files/20120305_retro_enterprises/retro_full/DS7_9274.jpg)
+
+![More Japanese Retro TVs](http://j.furinkan.meidokon.net/img/full/DS7_9280.jpg)
